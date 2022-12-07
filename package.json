@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "compressing": "^1.6.2",
+    "xlsx": "^0.18.5"
+  },
+  "name": "dutch-postal-code-city-coordinates",
+  "description": "This repository aims to maintain a list of Dutch postal codes, cities, and their gps coordinates as a free alternative to Google's Geocoding API.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drikusroor/dutch-postal-code-city-coordinates.git"
+  },
+  "keywords": [
+    "netherlands",
+    "dutch",
+    "postal",
+    "codes",
+    "city",
+    "gps",
+    "coordinates"
+  ],
+  "author": "Drikus Roor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drikusroor/dutch-postal-code-city-coordinates/issues"
+  },
+  "homepage": "https://github.com/drikusroor/dutch-postal-code-city-coordinates#readme"
+}
