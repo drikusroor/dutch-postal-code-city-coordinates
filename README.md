@@ -78,20 +78,18 @@ The `data/postcodetabel.json` file is also converted to a subset of the data, co
 Apart from that, there is also a subset of the data with the average latitude and longitude per postal code number, with the city included as well. It is stored in `data/postcodetabel-postal-code-city.json` and has the following structure:
 
 ```json
-[
-  {
-    "pcnr": "6651",
+{
+  "6651": {
     "city": "Druten",
     "lat": 51.8876046309833,
     "lon": 5.5977233668844
   },
-  {
-    "pcnr": "1189",
+  "1189": {
     "city": "Amstelveen",
     "lat": 52.2590205492292,
     "lon": 4.8698991546708
   }
-]
+}
 ```
 
 #### Postal code, latitude, longitude subset
@@ -118,18 +116,16 @@ There is also a subset of the data with only the postal code, latitude, and long
 Apart from that, there is also a subset of the data with the average latitude and longitude per postal code number, stored in `data/postcodetabel-postal-code-aggregated.json` and has the following structure:
 
 ```json
-[
-  {
-    "pcnr": "6651",
+{
+  "6651": {
     "lat": 51.8876046309833,
     "lon": 5.5977233668844
   },
-  {
-    "pcnr": "1189",
+  "1189": {
     "lat": 52.2590205492292,
     "lon": 4.8698991546708
   }
-]
+}
 ```
 
 #### City, latitude, longitude aggregated subset
@@ -137,16 +133,14 @@ Apart from that, there is also a subset of the data with the average latitude an
 Lastly, there is also a subset of the data with the average latitude, and longitude per city, stored in `data/postcodetabel-city-aggregated.json` that has the following structure:
 
 ```json
-[
-  {
-    "city": "Druten",
+{
+  "Druten": {
     "lat": 51.8876046309833,
     "lon": 5.5977233668844
   },
-  {
-    "city": "Amstelveen",
+  "Amstelveen": {
     "lat": 52.2590205492292,
     "lon": 4.8698991546708
   }
-]
+}
 ```
