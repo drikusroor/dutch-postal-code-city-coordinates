@@ -5,6 +5,8 @@ function getSubset(data, columnsMap, aggregateKey = null) {
       Object.keys(columnsMap).forEach((key) => {
         filteredRow[columnsMap[key]] = row[key];
       });
+
+      filteredRow.c = [row.Latitude, row.Longitude];
       return filteredRow;
     });
   }
@@ -33,8 +35,7 @@ function getSubset(data, columnsMap, aggregateKey = null) {
 
       acc[aggregateValue] = {
         ...filteredRow,
-        lat: averageLat,
-        lon: averageLon,
+        c: [averageLat, averageLon],
       };
 
       // remove aggregate key from object

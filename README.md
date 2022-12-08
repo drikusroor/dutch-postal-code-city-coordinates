@@ -61,14 +61,12 @@ The `data/postcodetabel.json` file is also converted to a subset of the data, co
   {
     "pc": "6651EH",
     "city": "Druten",
-    "lat": 51.8876046309833,
-    "lon": 5.5977233668844
+    "c": [51.8876046309833, 5.5977233668844]
   },
   {
     "pc": "1189WK",
     "city": "Amstelveen",
-    "lat": 52.2590205492292,
-    "lon": 4.8698991546708
+    "c": [52.2590205492292, 4.8698991546708]
   }
 ]
 ```
@@ -81,13 +79,11 @@ Apart from that, there is also a subset of the data with the average latitude an
 {
   "6651": {
     "city": "Druten",
-    "lat": 51.8876046309833,
-    "lon": 5.5977233668844
+    "c": [51.8876046309833, 5.5977233668844]
   },
   "1189": {
     "city": "Amstelveen",
-    "lat": 52.2590205492292,
-    "lon": 4.8698991546708
+    "c": [52.2590205492292, 4.8698991546708]
   }
 }
 ```
@@ -100,13 +96,11 @@ There is also a subset of the data with only the postal code, latitude, and long
 [
   {
     "pc": "6651EH",
-    "lat": 51.8876046309833,
-    "lon": 5.5977233668844
+    "c": [51.8876046309833, 5.5977233668844]
   },
   {
     "pc": "1189WK",
-    "lat": 52.2590205492292,
-    "lon": 4.8698991546708
+    "c": [52.2590205492292, 4.8698991546708]
   }
 ]
 ```
@@ -118,12 +112,10 @@ Apart from that, there is also a subset of the data with the average latitude an
 ```json
 {
   "6651": {
-    "lat": 51.8876046309833,
-    "lon": 5.5977233668844
+    "c": [51.8876046309833, 5.5977233668844]
   },
   "1189": {
-    "lat": 52.2590205492292,
-    "lon": 4.8698991546708
+    "c": [52.2590205492292, 4.8698991546708]
   }
 }
 ```
@@ -135,12 +127,10 @@ Lastly, there is also a subset of the data with the average latitude, and longit
 ```json
 {
   "Druten": {
-    "lat": 51.8876046309833,
-    "lon": 5.5977233668844
+    "c": [51.8876046309833, 5.5977233668844]
   },
   "Amstelveen": {
-    "lat": 52.2590205492292,
-    "lon": 4.8698991546708
+    "c": [52.2590205492292, 4.8698991546708]
   }
 }
 ```

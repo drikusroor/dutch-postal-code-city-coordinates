@@ -82,35 +82,28 @@ describe("getSubset", () => {
   it("gets a subset of the postcodetabel dataset", () => {
     const postalCodeColumns = {
       PostCode: "pc",
-      Latitude: "lat",
-      Longitude: "lon",
     };
     const filteredJsonDataPostalCode = getSubset(sampleData, postalCodeColumns);
     expect(filteredJsonDataPostalCode).toEqual([
       {
         pc: "6651EH",
-        lat: 3,
-        lon: 3,
+        c: [3, 3],
       },
       {
         pc: "6651EV",
-        lat: 5,
-        lon: 9,
+        c: [5, 9],
       },
       {
         pc: "6651DA",
-        lat: 7,
-        lon: 9,
+        c: [7, 9],
       },
       {
         pc: "8471RK",
-        lat: 52.8735274661331,
-        lon: 5.9963276468421,
+        c: [52.8735274661331, 5.9963276468421],
       },
       {
         pc: "7231JH",
-        lat: 52.1385577151151,
-        lon: 6.2255882423347,
+        c: [52.1385577151151, 6.2255882423347],
       },
     ]);
   });
@@ -119,40 +112,33 @@ describe("getSubset", () => {
     const postalCodeColumns = {
       PostCode: "pc",
       Plaats: "city",
-      Latitude: "lat",
-      Longitude: "lon",
     };
     const filteredJsonDataPostalCode = getSubset(sampleData, postalCodeColumns);
     expect(filteredJsonDataPostalCode).toEqual([
       {
         pc: "6651EH",
         city: "Druten",
-        lat: 3,
-        lon: 3,
+        c: [3, 3],
       },
       {
         pc: "6651EV",
         city: "Druten",
-        lat: 5,
-        lon: 9,
+        c: [5, 9],
       },
       {
         pc: "6651DA",
         city: "Druten",
-        lat: 7,
-        lon: 9,
+        c: [7, 9],
       },
       {
         pc: "8471RK",
         city: "Wolvega",
-        lat: 52.8735274661331,
-        lon: 5.9963276468421,
+        c: [52.8735274661331, 5.9963276468421],
       },
       {
         pc: "7231JH",
         city: "Warnsveld",
-        lat: 52.1385577151151,
-        lon: 6.2255882423347,
+        c: [52.1385577151151, 6.2255882423347],
       },
     ]);
   });
@@ -160,8 +146,6 @@ describe("getSubset", () => {
   it("gets a subset of the postcodetabel dataset with an aggregate key", () => {
     const postalCodeColumns = {
       PostcodeNummers: "pcnr",
-      Latitude: "lat",
-      Longitude: "lon",
     };
     const filteredJsonDataPostalCode = getSubset(
       sampleData,
@@ -170,16 +154,13 @@ describe("getSubset", () => {
     );
     expect(filteredJsonDataPostalCode).toEqual({
       6651: {
-        lat: 5,
-        lon: 7,
+        c: [5, 7],
       },
       8471: {
-        lat: 52.8735274661331,
-        lon: 5.9963276468421,
+        c: [52.8735274661331, 5.9963276468421],
       },
       7231: {
-        lat: 52.1385577151151,
-        lon: 6.2255882423347,
+        c: [52.1385577151151, 6.2255882423347],
       },
     });
   });
@@ -188,8 +169,6 @@ describe("getSubset", () => {
     const postalCodeColumns = {
       PostcodeNummers: "pcnr",
       Plaats: "city",
-      Latitude: "lat",
-      Longitude: "lon",
     };
     const filteredJsonDataPostalCode = getSubset(
       sampleData,
@@ -199,18 +178,15 @@ describe("getSubset", () => {
     expect(filteredJsonDataPostalCode).toEqual({
       6651: {
         city: "Druten",
-        lat: 5,
-        lon: 7,
+        c: [5, 7],
       },
       8471: {
         city: "Wolvega",
-        lat: 52.8735274661331,
-        lon: 5.9963276468421,
+        c: [52.8735274661331, 5.9963276468421],
       },
       7231: {
         city: "Warnsveld",
-        lat: 52.1385577151151,
-        lon: 6.2255882423347,
+        c: [52.1385577151151, 6.2255882423347],
       },
     });
   });

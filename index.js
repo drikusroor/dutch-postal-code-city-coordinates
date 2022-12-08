@@ -32,8 +32,6 @@ async function main() {
   const postalCodeCityColumns = {
     PostCode: "pc",
     Plaats: "city",
-    Latitude: "lat",
-    Longitude: "lon",
   };
   const filteredJsonData = getSubset(fullJsonData, postalCodeCityColumns);
   fs.writeFileSync(
@@ -45,8 +43,6 @@ async function main() {
   const postalCodeNumberCityAggregateColumns = {
     PostcodeNummers: "pcnr",
     Plaats: "city",
-    Latitude: "lat",
-    Longitude: "lon",
   };
   const filteredJsonDataAggregated = getSubset(
     fullJsonData,
@@ -61,8 +57,6 @@ async function main() {
   // pc, lat, lon
   const postalCodeColumns = {
     PostCode: "pc",
-    Latitude: "lat",
-    Longitude: "lon",
   };
   const filteredJsonDataPostalCode = getSubset(fullJsonData, postalCodeColumns);
   fs.writeFileSync(
@@ -72,8 +66,6 @@ async function main() {
 
   const postalCodeNumberAggregatedColumns = {
     PostcodeNummers: "pcnr",
-    Latitude: "lat",
-    Longitude: "lon",
   };
   const filteredJsonDataPostalCodeAggregated = getSubset(
     fullJsonData,
@@ -88,8 +80,6 @@ async function main() {
   // city, lat, lon
   const cityAggregateColumns = {
     Plaats: "city",
-    Latitude: "lat",
-    Longitude: "lon",
   };
   const filteredJsonDataCityAggregated = getSubset(
     fullJsonData,
