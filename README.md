@@ -17,7 +17,7 @@ The data is retrieved from the [Postcodetabel](http://www.sqlblog.nl/postcodetab
 
 ### Postcodetabel json
 
-The entry file `index.js` then converts and writes this to a json file `data/postcodetabel.json`, which is then archive due to Github's file size restrictions. It has the following structure:
+The entry file `index.js` then converts and writes this to a json file `data/postcodetabel.json`, which is then archived due to Github's file size restrictions. It has the following structure:
 
 ```json
 [
