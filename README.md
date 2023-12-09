@@ -8,7 +8,7 @@ This repository aims to maintain a list of Dutch postal codes, cities, and their
 
 ### Postcodetabel xlsx
 
-The data is retrieved from the [Postcodetabel](http://www.sqlblog.nl/postcodetabel-nederland-sql-script/) but might be outdated (likeley from around 2016). The data is stored in an XLSX file `data/postcodetabel.xlsx`. It has the following structure:
+The data is retrieved from the [Postcodetabel](http://www.sqlblog.nl/postcodetabel-nederland-sql-script/) but might be outdated (likely from around 2016). The data is stored in an XLSX file `data/postcodetabel.xlsx`. It has the following structure:
 
 | PostcodeID | PostCodePK | PostCode | PostcodeNummers | PostcodeLetters | Straat        | MinNummer | MaxNummer | Plaats     | Gemeente   | Provincie     | Latitude         | Longitude       |
 | ---------- | ---------- | -------- | --------------- | --------------- | ------------- | --------- | --------- | ---------- | ---------- | ------------- | ---------------- | --------------- |
